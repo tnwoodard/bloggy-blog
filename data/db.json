@@ -1,0 +1,28 @@
+{
+  "blogs": [
+    {
+      "title": "Welcome",
+      "body": "React is kinda cool!",
+      "username": "Tempestt W.",
+      "id": 1
+    },
+    {
+      "title": "Built with React",
+      "body": "This app was built with React.",
+      "username": "Tempestt W.",
+      "id": 2
+    },
+    {
+      "title": "Dogs: 101",
+      "body": "This pack animal makes a great companion and protector.",
+      "username": "Cesar M.",
+      "id": 3
+    },
+    {
+      "title": "Lisbon Tech Scene",
+      "body": "Lisbon is a burgeoning hub for startups.",
+      "username": "Techguru",
+      "id": 4
+    }
+  ]
+}
