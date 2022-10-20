@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Getting Started with bloggy-blog
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This blog application was built with React JS, using React components, props and hooks. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
