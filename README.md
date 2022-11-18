@@ -1,6 +1,6 @@
 # Getting Started with bloggy-blog
 
-This blog application was built with React JS, using React Router, components, props and hooks. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This blog application was built with React JS, using React Router, components, props and custom hooks. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 In the project directory, you **will need** to run:
