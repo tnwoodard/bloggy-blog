@@ -4,7 +4,7 @@ import useFetch from './useFetch';
 
 //this is the current data and state
 const Home = () => {
-  const { data: blogs, isPending, error } = useFetch('http://localhost:8000/blogs')
+  const { error, isPending, data: blogs } = useFetch('http://localhost:8000/blogs')
 
  // current state - simulating a loading message, error msgs
 
@@ -17,7 +17,7 @@ const Home = () => {
       {/* /* if error is a value, then print it and so forth * } */}
       { error && <div>{ error }</div>}
       { isPending && <div>Loading...</div>}
-      {blogs && <BlogList blogs={blogs} title='Blog List:' />}
+      {blogs && <BlogList blogs={blogs} />}
 
     </div>
   );

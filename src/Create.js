@@ -1,12 +1,29 @@
 import { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 
 const Create = () => {
-  const [title, setTitle] = useState('')
+  const [title, setTitle] = useState('');
+  const [body, setBody] = useState('');
+  const [username, setUsername] = useState('Techguru');
+  const history = useHistory();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const blog = { title, body, username };
+
+    fetch('http://localhost:8000/blogs', {
+      method: 'POST',
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(blog)
+    }).then(() => {
+      history.push('/');
+    })
+  }
 
   return (
     <div className="create">
       <h2>Add a New Blog</h2>
-      <form action="">
+      <form onSubmit={handleSubmit}>
         <label>Blog title:</label>
           <input
             type="text"
@@ -17,19 +34,22 @@ const Create = () => {
         <label>Blog body:</label>
         <textarea
           required
+          value={body}
+          onChange={(e) => setBody(e.target.value)}
         ></textarea>
         <label>Blog username:</label>
-        <select>
+        <select
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+        >
           <option value="Tempestt W.">Tempestt W.</option>
           <option value="Cesar M.">Cesar M.</option>
           <option value="Techguru">Techguru</option>
         </select>
-        <button>
-          Add Blog
-        </button>
+        <button>Add blog</button>
       </form>
     </div>
   );
 }
 
-export default Create
+export default Create;

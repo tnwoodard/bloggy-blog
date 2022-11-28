@@ -17,8 +17,8 @@ const useFetch = (url) => {
           return res.json();
         })
         .then(data => {
-          setData(data);
           setIsPending(false);
+          setData(data);
           setError(null);
         })
         .catch(err => {
@@ -32,7 +32,7 @@ const useFetch = (url) => {
       }, 1000);
       return () => abortCont.abort();
     }, [url]);
-    return { data, isPending, error }
+    return { data, isPending, error };
 }
 
 export default useFetch;
