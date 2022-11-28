@@ -11,7 +11,7 @@ const Create = () => {
     e.preventDefault();
     const blog = { title, body, username };
 
-    fetch('http://localhost:8000/blogs', {
+    fetch('https://bloggy-blog-database.herokuapp.com/blogs', {
       method: 'POST',
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(blog)

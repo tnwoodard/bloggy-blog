@@ -4,7 +4,7 @@ import useFetch from './useFetch';
 
 //this is the current data and state
 const Home = () => {
-  const { error, isPending, data: blogs } = useFetch('http://localhost:8000/blogs')
+  const { error, isPending, data: blogs } = useFetch('https://bloggy-blog-database.herokuapp.com/blogs')
 
  // current state - simulating a loading message, error msgs
 
