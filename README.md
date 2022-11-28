@@ -1,10 +1,9 @@
 # Getting Started with bloggy-blog
 
-This blog application was built with React JS, using React components, props and hooks. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This blog application was built with React JS, using React Router, components, props and custom hooks. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
-
-In the project directory, you can run:
+In the project directory, you **will need** to run:
 
 ### `npm start`
 
@@ -13,6 +12,14 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+### `npm json-server`
+Run ```npx json-server --watch data/db.json --port 8000```\
+This runs the database, and the app will fetch JSON data.
+
+<br />
+
+You **may want** to run:
 
 ### `npm test`
 
